@@ -1,0 +1,18 @@
+spring:
+  datasource:
+#    driver-class-name:org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/messaging_application
+    username: postgres
+    password: 4558
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+        hibernate:
+          format_sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  default-produces-media-type: application/json
